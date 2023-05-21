@@ -244,5 +244,5 @@ main .section.highlight {
 }
 
 main .section.highlight-blue {
-  background-color: var(--highlight-background-color);
+  background-color: var(--highlight-background-color-blue);
 }

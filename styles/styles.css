@@ -12,12 +12,15 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
+  --link-color: #d25f31;
+  --link-hover-color: #ce3f00;
   --background-color: #fff;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
+  --highlight-background-color: #F4F6F8;
+  --highlight-background-color-blue: #0d3172;
   --text-color: #000;
+  --tw-gradient-from-position: ;
+  --tw-gradient-to-position: ;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -240,4 +243,40 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .section.highlight-blue {
+  --tw-bg-opacity: 1
+  background-color: var(--highlight-background-color-blue);
+}
+
+.font-danaherblue {
+  /* --tw-bg-opacity:1; */
+  color: #fff;
+}
+
+.bg-danaherblue-600 {
+  /* --tw-bg-opacity:1; */
+  background-color: #0d3172;
+}
+
+.from-danaherblue-900 {
+  --tw-gradient-from: #061c44 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(6,28,68,0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right,var(--tw-gradient-stops));
+}
+
+.border-2 {
+  border-width: 2px
+}
+
+.btn-brand {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 96 22/var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255/var(--tw-text-opacity))
 }
